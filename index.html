@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+  <!-- <link rel="stylesheet" href="./assets/styles.css"> -->
+
+    <title>Kenyan PAYE calculator</title>
+</head>
+<body>
+     <!-- <header> -->
+        <!-- This is a calculator to be able to know how your tax is done -->
+    <!-- </header> --> 
+   <div class = "whole">
+    
+        
+                <table >
+                    You can use the calculator below to help you calculate how your tax is done
+                    <tbody>
+                    <tr>
+                    <td>
+                        Pay period:  
+                    </td>
+                    <td>
+                        <input type = "checkbox" neme= "period" id ="period1" > month
+                         <span></span> <input type = "checkbox" name="period" id = "period2"> year
+                    </td>
+                </tr>
+                    <br>
+                <tr>
+                    <td>
+                        Basic salary:  
+                    </td>
+                    <td>
+                        <span></span><input type = "text" placeholder="Enter Your Salary" id = "basicSl" required>KSH
+                    </td>  
+                </tr>
+                    <br><br>
+                <tr>
+                    <td>
+                        Benefits (Bonus, Allowance): 
+                    </td>
+
+                    <td>
+                        <span></span><input type = "text" id = "beneFiti" placeholder="Enter Your Benefits"   required>KSH
+                    </td> 
+                </tr>
+                    <br><br> 
+                <tr>    
+                    <td>
+                        Deduct NSSF:  
+                    </td>
+                    <td>
+                        <span></span><input type = "checkbox" id = "deductNssf1">YES  <input type = "checkbox" id = "deductNssf2">N0
+                    </td> 
+                </tr>      
+                    <br><br>
+                <tr>
+                    <td>
+                         NSSF Rate:  
+                    </td>
+                    <td>
+                        <span></span><input type = "checkbox" id = "nnr1"> NEW NSSF RATES (TIERED) <br> 
+                        <span></span> <input type = "checkbox" nssf = "nnr2"> OLD NSSF RATES  (KSH 200)
+                    </td>                  
+                </tr>
+                <br><br>
+                <tr>
+                    <td>
+                        Deduct NHIF:  
+                    </td>
+                    <br>  <br>  <br> <br>
+                    <td>
+                        <span></span><input type = "checkbox" id="deductNHIF1">YES <span></span> <input type = "checkbox" id="deductNHIF2">N0
+                 </td> 
+                </tr>
+                <br><br>
+                </tbody>
+                </table>
+                
+                <div class="calculator">    
+                    <input type="button"  width: 400px;" id="calculate" value="calculate">
+                    </div>
+   </div>
+                <div class="part2">
+
+                    <form action="">
+                        <div class="row">
+                            <div class="left-row">
+                                <table class="border">
+                                    <tr>
+                                        <td>
+                                            <h5>Income before pension deduction</h5>
+                                        </td>
+                                        <td class="h6">
+                                            <h6>KSH <span class="val1">00</span></h6>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>Deductible NSSF pension contribution</h5>
+                                        </td>
+                                        <td class="h6">
+                                            <h6>KSH <span class="val2">00</span></h6>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                           <td>
+                                            <h5>Income after pension deduction</h5>
+                                        </td>
+                                        <td class="h6">
+                                            <h6>KSH <span class="val3">00</span></h6>
+                                        </td> 
+                                        </tr>
+                                        
+                                    <tr>
+                                        <td>
+                                            <h5>Benefits in Kind</h5>
+                                        </td>
+                                        <td class="h6">
+                                            <h6>KSH <span class="val4">00</span></h6>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>Taxable Income</h5>
+                                        </td>
+                                        <td class="h6">
+                                            <h6>KSH <span class="val5">00</span></h6>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>Tax on taxable income</h5>
+                                        </td>
+                                        <td class="h6">
+                                            <h6>KSH <span class="val6">00</span></h6>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           <h5>Personal relief</h5> 
+                                        </td>
+                                        <td class="h6">
+                                           <h6>KSH <span class="val7">00</span></h6> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>Tax Net off relief</h5>
+                                        </td>
+                                        <td class="h6">
+                                            <h6>KSH <span class="val8">00</span></h6>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>Paye</h5> 
+                                        </td>
+                                        <td class="h6">
+                                            <h6>KSH <span class="val9">00</span></h6>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>chargeable income</h5> 
+                                        </td>
+                                        <td class="h6">
+                                           <h6>KSH <span class="val10">00</span></h6> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>Nhif contribution</h5>
+                                        </td>
+                                        <td class="h6">
+                                            <h6>KSH <span class="val11">00</span></h6>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           <h5>Net pay</h5> 
+                                        </td>
+                                        <td class="h6">
+                                            <h6>KSH <span class="val12">00</span></h6>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+                            <!-- <div class="right-r">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="left-row">
+                                
+                            </div>
+                            <div class="right-r">
+                                
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="left-row">
+                                
+                            </div>
+                            <div class="right-r">
+                                
+                            </div>
+                        
+                        </div> -->
+                        
+                        <!-- <div class="row">
+                            <div class="left-row">
+                                
+                            </div>
+                            <div class="right-r">
+                                
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="left-row">
+                                
+                            </div>
+                            <div class="right-r">
+                               
+                            </div>
+                        </div> -->
+    
+                        <!-- <div class="row">
+                            <div class="left-row">
+                                
+                            </div>
+                            <div class="right-r">
+                                
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="left-row">
+                                
+                            </div>
+                            <div class="right-r">
+                                
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="left-row">
+                                
+                            </div>
+                            <div class="right-r">
+                                
+                            </div>
+                        </div>
+     -->
+                        <!-- <div class="row">
+                            <div class="left-row">
+                               
+                            </div>
+                            <div class="right-r">
+                                
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="left-row">
+                               
+                            </div>
+                            <div class="right-r">
+                                
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="left-row"> -->
+                                
+                            <!-- </div>
+                            <div class="right-r">
+                                
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="left-row">
+                                
+                            </div>
+                            <div class="right-r">
+                                
+                            </div>
+                        </div>
+     -->
+                    </form>
+                </div>
+                <!-- <footer>
+                    footer
+                    &copy;theeduke</footer> -->
+           
+    <script src="maincopy.js"></script>
+
+</body>
+</html>
