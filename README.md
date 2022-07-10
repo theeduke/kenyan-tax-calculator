@@ -1,1 +1,1 @@
-simple kenyan tax calculator
+Simple kenyan tax calculator
